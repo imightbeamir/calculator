@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="calculator">
+      <input type="text" readonly class="display" />
+      <div class="buttons">
+        <table>
+          <tr>
+            <td><button class="op" onclick="OPclicked('c')">C</button></td>
+            <td>
+              <button class="op" onclick="OPclicked('del')">&leftarrow;</button>
+            </td>
+            <td><button class="op" onclick="OPclicked('/')">/</button></td>
+            <td><button class="op" onclick="OPclicked('*')">*</button></td>
+          </tr>
+          <tr>
+            <td><button class="num" onclick="NUMclicked('7')">7</button></td>
+            <td><button class="num" onclick="NUMclicked('8')">8</button></td>
+            <td><button class="num" onclick="NUMclicked('9')">9</button></td>
+            <td><button class="op" onclick="OPclicked('+')">+</button></td>
+          </tr>
+          <tr>
+            <td><button class="num" onclick="NUMclicked('4')">4</button></td>
+            <td><button class="num" onclick="NUMclicked('5')">5</button></td>
+            <td><button class="num" onclick="NUMclicked('6')">6</button></td>
+            <td><button class="op" onclick="OPclicked('-')">-</button></td>
+          </tr>
+          <tr>
+            <td><button class="num" onclick="NUMclicked('1')">1</button></td>
+            <td><button class="num" onclick="NUMclicked('2')">2</button></td>
+            <td><button class="num" onclick="NUMclicked('3')">3</button></td>
+            <td><button class="equal" onclick="EQUALclicked()">=</button></td>
+          </tr>
+          <tr>
+            <td><button class="num" onclick="NUMclicked('0')">0</button></td>
+            <td><button class="num" onclick="NUMclicked('.')">.</button></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
